@@ -9,24 +9,28 @@
 /* Begin PBXBuildFile section */
 		5552B48F30D15B9C07C410F9 /* Pods_KualiteeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918C3DFA8EEF5690C137C548 /* Pods_KualiteeSDK.framework */; };
 		760C4EAB5C9FD8D86715EBF4 /* Pods_KualiteeSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FFD4CBC8E69A7D6EF47DBA /* Pods_KualiteeSDKTests.framework */; };
+		87636E0B22392B8600306502 /* KualiteeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636DE422392B8500306502 /* KualiteeUtility.swift */; };
+		87636E0D22392B8600306502 /* CanvasColorCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636DE922392B8500306502 /* CanvasColorCollectionCell.swift */; };
+		87636E0E22392B8600306502 /* CanvasViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636DEB22392B8500306502 /* CanvasViewDelegate.swift */; };
+		87636E0F22392B8600306502 /* KualiteeCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636DED22392B8500306502 /* KualiteeCanvas.swift */; };
+		87636E1022392B8600306502 /* CanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87636DEF22392B8500306502 /* CanvasViewController.xib */; };
+		87636E1122392B8600306502 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636DF022392B8500306502 /* CanvasViewController.swift */; };
+		87636E1222392B8600306502 /* CanvasPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636DF222392B8500306502 /* CanvasPoint.swift */; };
+		87636E1322392B8600306502 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636DF422392B8500306502 /* Constants.swift */; };
+		87636E1422392B8600306502 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636DF622392B8500306502 /* ActivityIndicatorView.swift */; };
+		87636E1522392B8600306502 /* KualiteeSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636DF822392B8500306502 /* KualiteeSDK.swift */; };
+		87636E1622392B8600306502 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636DFA22392B8500306502 /* Extensions.swift */; };
+		87636E1722392B8600306502 /* KualiteeSDKCrashlytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636DFC22392B8500306502 /* KualiteeSDKCrashlytics.swift */; };
+		87636E1822392B8600306502 /* KualiteeSDKSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 87636DFE22392B8600306502 /* KualiteeSDKSwift.h */; };
+		87636E1922392B8600306502 /* KRuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636E0022392B8600306502 /* KRuntimeError.swift */; };
+		87636E1A22392B8600306502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87636E0222392B8600306502 /* Assets.xcassets */; };
+		87636E1B22392B8600306502 /* AWSKualiteeS3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636E0422392B8600306502 /* AWSKualiteeS3.swift */; };
+		87636E1C22392B8600306502 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636E0622392B8600306502 /* UIWindow+Extension.swift */; };
+		87636E1D22392B8600306502 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636E0822392B8600306502 /* URL+Extension.swift */; };
+		87636E1E22392B8600306502 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636E0A22392B8600306502 /* NetworkManager.swift */; };
 		87B8E95722390A7200CE602B /* KualiteeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B8E94D22390A7200CE602B /* KualiteeSDK.framework */; };
 		87B8E95C22390A7200CE602B /* KualiteeSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8E95B22390A7200CE602B /* KualiteeSDKTests.swift */; };
 		87B8E95E22390A7200CE602B /* KualiteeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 87B8E95022390A7200CE602B /* KualiteeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87B8E97622390DCD00CE602B /* Kualitee RuntimeError in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E96722390DCC00CE602B /* Kualitee RuntimeError */; };
-		87B8E97722390DCD00CE602B /* Network Manager in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E96822390DCC00CE602B /* Network Manager */; };
-		87B8E97822390DCD00CE602B /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E96922390DCC00CE602B /* Resources */; };
-		87B8E97922390DCD00CE602B /* UIView + Extension in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E96A22390DCC00CE602B /* UIView + Extension */; };
-		87B8E97A22390DCD00CE602B /* AWS Configurations in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E96B22390DCC00CE602B /* AWS Configurations */; };
-		87B8E97B22390DCD00CE602B /* Kualitee Crash Reporting in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E96C22390DCC00CE602B /* Kualitee Crash Reporting */; };
-		87B8E97C22390DCD00CE602B /* Header in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E96D22390DCC00CE602B /* Header */; };
-		87B8E97D22390DCD00CE602B /* Screenshot Editor in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E96E22390DCD00CE602B /* Screenshot Editor */; };
-		87B8E97E22390DCD00CE602B /* Contants in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E96F22390DCD00CE602B /* Contants */; };
-		87B8E97F22390DCD00CE602B /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E97022390DCD00CE602B /* Assets */; };
-		87B8E98022390DCD00CE602B /* URL+Extension in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E97122390DCD00CE602B /* URL+Extension */; };
-		87B8E98122390DCD00CE602B /* ActivityIndicatorView in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E97222390DCD00CE602B /* ActivityIndicatorView */; };
-		87B8E98222390DCD00CE602B /* Utility in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E97322390DCD00CE602B /* Utility */; };
-		87B8E98322390DCD00CE602B /* UIWindow+Extension in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E97422390DCD00CE602B /* UIWindow+Extension */; };
-		87B8E98422390DCD00CE602B /* Kualitee SDK in Resources */ = {isa = PBXBuildFile; fileRef = 87B8E97522390DCD00CE602B /* Kualitee SDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,27 +45,31 @@
 
 /* Begin PBXFileReference section */
 		65BC70EFC50380C0E2DDCD1F /* Pods-KualiteeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KualiteeSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KualiteeSDK/Pods-KualiteeSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		87636DE422392B8500306502 /* KualiteeUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KualiteeUtility.swift; sourceTree = "<group>"; };
+		87636DE922392B8500306502 /* CanvasColorCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasColorCollectionCell.swift; sourceTree = "<group>"; };
+		87636DEB22392B8500306502 /* CanvasViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewDelegate.swift; sourceTree = "<group>"; };
+		87636DED22392B8500306502 /* KualiteeCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KualiteeCanvas.swift; sourceTree = "<group>"; };
+		87636DEF22392B8500306502 /* CanvasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CanvasViewController.xib; sourceTree = "<group>"; };
+		87636DF022392B8500306502 /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
+		87636DF222392B8500306502 /* CanvasPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasPoint.swift; sourceTree = "<group>"; };
+		87636DF422392B8500306502 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		87636DF622392B8500306502 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		87636DF822392B8500306502 /* KualiteeSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KualiteeSDK.swift; sourceTree = "<group>"; };
+		87636DFA22392B8500306502 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		87636DFC22392B8500306502 /* KualiteeSDKCrashlytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KualiteeSDKCrashlytics.swift; sourceTree = "<group>"; };
+		87636DFE22392B8600306502 /* KualiteeSDKSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KualiteeSDKSwift.h; sourceTree = "<group>"; };
+		87636E0022392B8600306502 /* KRuntimeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRuntimeError.swift; sourceTree = "<group>"; };
+		87636E0222392B8600306502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87636E0422392B8600306502 /* AWSKualiteeS3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSKualiteeS3.swift; sourceTree = "<group>"; };
+		87636E0622392B8600306502 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		87636E0822392B8600306502 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		87636E0A22392B8600306502 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		87B8E94D22390A7200CE602B /* KualiteeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KualiteeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B8E95022390A7200CE602B /* KualiteeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KualiteeSDK.h; sourceTree = "<group>"; };
 		87B8E95122390A7200CE602B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B8E95622390A7200CE602B /* KualiteeSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KualiteeSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B8E95B22390A7200CE602B /* KualiteeSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KualiteeSDKTests.swift; sourceTree = "<group>"; };
 		87B8E95D22390A7200CE602B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87B8E96722390DCC00CE602B /* Kualitee RuntimeError */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Kualitee RuntimeError"; sourceTree = "<group>"; };
-		87B8E96822390DCC00CE602B /* Network Manager */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Network Manager"; sourceTree = "<group>"; };
-		87B8E96922390DCC00CE602B /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
-		87B8E96A22390DCC00CE602B /* UIView + Extension */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "UIView + Extension"; sourceTree = "<group>"; };
-		87B8E96B22390DCC00CE602B /* AWS Configurations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "AWS Configurations"; sourceTree = "<group>"; };
-		87B8E96C22390DCC00CE602B /* Kualitee Crash Reporting */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Kualitee Crash Reporting"; sourceTree = "<group>"; };
-		87B8E96D22390DCC00CE602B /* Header */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Header; sourceTree = "<group>"; };
-		87B8E96E22390DCD00CE602B /* Screenshot Editor */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Screenshot Editor"; sourceTree = "<group>"; };
-		87B8E96F22390DCD00CE602B /* Contants */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Contants; sourceTree = "<group>"; };
-		87B8E97022390DCD00CE602B /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
-		87B8E97122390DCD00CE602B /* URL+Extension */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "URL+Extension"; sourceTree = "<group>"; };
-		87B8E97222390DCD00CE602B /* ActivityIndicatorView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ActivityIndicatorView; sourceTree = "<group>"; };
-		87B8E97322390DCD00CE602B /* Utility */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utility; sourceTree = "<group>"; };
-		87B8E97422390DCD00CE602B /* UIWindow+Extension */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "UIWindow+Extension"; sourceTree = "<group>"; };
-		87B8E97522390DCD00CE602B /* Kualitee SDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Kualitee SDK"; sourceTree = "<group>"; };
 		918C3DFA8EEF5690C137C548 /* Pods_KualiteeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KualiteeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2BB0A60F73FA1B3D92D07D /* Pods-KualiteeSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KualiteeSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KualiteeSDKTests/Pods-KualiteeSDKTests.release.xcconfig"; sourceTree = "<group>"; };
 		C2FFD4CBC8E69A7D6EF47DBA /* Pods_KualiteeSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KualiteeSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +109,172 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		87636DE322392B8500306502 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				87636DE422392B8500306502 /* KualiteeUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		87636DE522392B8500306502 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87B8E95022390A7200CE602B /* KualiteeSDK.h */,
+				87B8E95122390A7200CE602B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87636DE722392B8500306502 /* Screenshot Editor */ = {
+			isa = PBXGroup;
+			children = (
+				87636DE822392B8500306502 /* CanvasCollectionCell */,
+				87636DEA22392B8500306502 /* CanvasViewDelegate */,
+				87636DEC22392B8500306502 /* Canvas View */,
+				87636DEE22392B8500306502 /* CanvasViewController */,
+				87636DF122392B8500306502 /* CanvasPointModel */,
+			);
+			path = "Screenshot Editor";
+			sourceTree = "<group>";
+		};
+		87636DE822392B8500306502 /* CanvasCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				87636DE922392B8500306502 /* CanvasColorCollectionCell.swift */,
+			);
+			path = CanvasCollectionCell;
+			sourceTree = "<group>";
+		};
+		87636DEA22392B8500306502 /* CanvasViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				87636DEB22392B8500306502 /* CanvasViewDelegate.swift */,
+			);
+			path = CanvasViewDelegate;
+			sourceTree = "<group>";
+		};
+		87636DEC22392B8500306502 /* Canvas View */ = {
+			isa = PBXGroup;
+			children = (
+				87636DED22392B8500306502 /* KualiteeCanvas.swift */,
+			);
+			path = "Canvas View";
+			sourceTree = "<group>";
+		};
+		87636DEE22392B8500306502 /* CanvasViewController */ = {
+			isa = PBXGroup;
+			children = (
+				87636DEF22392B8500306502 /* CanvasViewController.xib */,
+				87636DF022392B8500306502 /* CanvasViewController.swift */,
+			);
+			path = CanvasViewController;
+			sourceTree = "<group>";
+		};
+		87636DF122392B8500306502 /* CanvasPointModel */ = {
+			isa = PBXGroup;
+			children = (
+				87636DF222392B8500306502 /* CanvasPoint.swift */,
+			);
+			path = CanvasPointModel;
+			sourceTree = "<group>";
+		};
+		87636DF322392B8500306502 /* Contants */ = {
+			isa = PBXGroup;
+			children = (
+				87636DF422392B8500306502 /* Constants.swift */,
+			);
+			path = Contants;
+			sourceTree = "<group>";
+		};
+		87636DF522392B8500306502 /* ActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				87636DF622392B8500306502 /* ActivityIndicatorView.swift */,
+			);
+			path = ActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		87636DF722392B8500306502 /* Kualitee SDK */ = {
+			isa = PBXGroup;
+			children = (
+				87636DF822392B8500306502 /* KualiteeSDK.swift */,
+			);
+			path = "Kualitee SDK";
+			sourceTree = "<group>";
+		};
+		87636DF922392B8500306502 /* UIView + Extension */ = {
+			isa = PBXGroup;
+			children = (
+				87636DFA22392B8500306502 /* Extensions.swift */,
+			);
+			path = "UIView + Extension";
+			sourceTree = "<group>";
+		};
+		87636DFB22392B8500306502 /* Kualitee Crash Reporting */ = {
+			isa = PBXGroup;
+			children = (
+				87636DFC22392B8500306502 /* KualiteeSDKCrashlytics.swift */,
+			);
+			path = "Kualitee Crash Reporting";
+			sourceTree = "<group>";
+		};
+		87636DFD22392B8600306502 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				87636DFE22392B8600306502 /* KualiteeSDKSwift.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		87636DFF22392B8600306502 /* Kualitee RuntimeError */ = {
+			isa = PBXGroup;
+			children = (
+				87636E0022392B8600306502 /* KRuntimeError.swift */,
+			);
+			path = "Kualitee RuntimeError";
+			sourceTree = "<group>";
+		};
+		87636E0122392B8600306502 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				87636E0222392B8600306502 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		87636E0322392B8600306502 /* AWS Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				87636E0422392B8600306502 /* AWSKualiteeS3.swift */,
+			);
+			path = "AWS Configurations";
+			sourceTree = "<group>";
+		};
+		87636E0522392B8600306502 /* UIWindow+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				87636E0622392B8600306502 /* UIWindow+Extension.swift */,
+			);
+			path = "UIWindow+Extension";
+			sourceTree = "<group>";
+		};
+		87636E0722392B8600306502 /* URL+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				87636E0822392B8600306502 /* URL+Extension.swift */,
+			);
+			path = "URL+Extension";
+			sourceTree = "<group>";
+		};
+		87636E0922392B8600306502 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				87636E0A22392B8600306502 /* NetworkManager.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
 		87B8E94322390A7200CE602B = {
 			isa = PBXGroup;
 			children = (
@@ -124,23 +298,21 @@
 		87B8E94F22390A7200CE602B /* KualiteeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				87B8E97222390DCD00CE602B /* ActivityIndicatorView */,
-				87B8E97022390DCD00CE602B /* Assets */,
-				87B8E96B22390DCC00CE602B /* AWS Configurations */,
-				87B8E96F22390DCD00CE602B /* Contants */,
-				87B8E96D22390DCC00CE602B /* Header */,
-				87B8E96C22390DCC00CE602B /* Kualitee Crash Reporting */,
-				87B8E96722390DCC00CE602B /* Kualitee RuntimeError */,
-				87B8E97522390DCD00CE602B /* Kualitee SDK */,
-				87B8E96822390DCC00CE602B /* Network Manager */,
-				87B8E96922390DCC00CE602B /* Resources */,
-				87B8E96E22390DCD00CE602B /* Screenshot Editor */,
-				87B8E96A22390DCC00CE602B /* UIView + Extension */,
-				87B8E97422390DCD00CE602B /* UIWindow+Extension */,
-				87B8E97122390DCD00CE602B /* URL+Extension */,
-				87B8E97322390DCD00CE602B /* Utility */,
-				87B8E95022390A7200CE602B /* KualiteeSDK.h */,
-				87B8E95122390A7200CE602B /* Info.plist */,
+				87636DF522392B8500306502 /* ActivityIndicatorView */,
+				87636E0122392B8600306502 /* Assets */,
+				87636E0322392B8600306502 /* AWS Configurations */,
+				87636DF322392B8500306502 /* Contants */,
+				87636DFD22392B8600306502 /* Header */,
+				87636DFB22392B8500306502 /* Kualitee Crash Reporting */,
+				87636DFF22392B8600306502 /* Kualitee RuntimeError */,
+				87636DF722392B8500306502 /* Kualitee SDK */,
+				87636E0922392B8600306502 /* Network Manager */,
+				87636DE522392B8500306502 /* Resources */,
+				87636DE722392B8500306502 /* Screenshot Editor */,
+				87636DF922392B8500306502 /* UIView + Extension */,
+				87636E0522392B8600306502 /* UIWindow+Extension */,
+				87636E0722392B8600306502 /* URL+Extension */,
+				87636DE322392B8500306502 /* Utility */,
 			);
 			path = KualiteeSDK;
 			sourceTree = "<group>";
@@ -171,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B8E95E22390A7200CE602B /* KualiteeSDK.h in Headers */,
+				87636E1822392B8600306502 /* KualiteeSDKSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +401,7 @@
 				TargetAttributes = {
 					87B8E94C22390A7200CE602B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					87B8E95522390A7200CE602B = {
 						CreatedOnToolsVersion = 10.1;
@@ -257,21 +431,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B8E97A22390DCD00CE602B /* AWS Configurations in Resources */,
-				87B8E97C22390DCD00CE602B /* Header in Resources */,
-				87B8E97E22390DCD00CE602B /* Contants in Resources */,
-				87B8E97B22390DCD00CE602B /* Kualitee Crash Reporting in Resources */,
-				87B8E98022390DCD00CE602B /* URL+Extension in Resources */,
-				87B8E98222390DCD00CE602B /* Utility in Resources */,
-				87B8E97722390DCD00CE602B /* Network Manager in Resources */,
-				87B8E97F22390DCD00CE602B /* Assets in Resources */,
-				87B8E97622390DCD00CE602B /* Kualitee RuntimeError in Resources */,
-				87B8E97822390DCD00CE602B /* Resources in Resources */,
-				87B8E98322390DCD00CE602B /* UIWindow+Extension in Resources */,
-				87B8E97D22390DCD00CE602B /* Screenshot Editor in Resources */,
-				87B8E98122390DCD00CE602B /* ActivityIndicatorView in Resources */,
-				87B8E98422390DCD00CE602B /* Kualitee SDK in Resources */,
-				87B8E97922390DCD00CE602B /* UIView + Extension in Resources */,
+				87636E1022392B8600306502 /* CanvasViewController.xib in Resources */,
+				87636E1A22392B8600306502 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +525,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87636E0E22392B8600306502 /* CanvasViewDelegate.swift in Sources */,
+				87636E0B22392B8600306502 /* KualiteeUtility.swift in Sources */,
+				87636E0D22392B8600306502 /* CanvasColorCollectionCell.swift in Sources */,
+				87636E1922392B8600306502 /* KRuntimeError.swift in Sources */,
+				87636E1E22392B8600306502 /* NetworkManager.swift in Sources */,
+				87636E1422392B8600306502 /* ActivityIndicatorView.swift in Sources */,
+				87636E1122392B8600306502 /* CanvasViewController.swift in Sources */,
+				87636E1622392B8600306502 /* Extensions.swift in Sources */,
+				87636E1322392B8600306502 /* Constants.swift in Sources */,
+				87636E1D22392B8600306502 /* URL+Extension.swift in Sources */,
+				87636E1722392B8600306502 /* KualiteeSDKCrashlytics.swift in Sources */,
+				87636E1C22392B8600306502 /* UIWindow+Extension.swift in Sources */,
+				87636E1B22392B8600306502 /* AWSKualiteeS3.swift in Sources */,
+				87636E1222392B8600306502 /* CanvasPoint.swift in Sources */,
+				87636E1522392B8600306502 /* KualiteeSDK.swift in Sources */,
+				87636E0F22392B8600306502 /* KualiteeCanvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,14 +689,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65BC70EFC50380C0E2DDCD1F /* Pods-KualiteeSDK.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = KualiteeSDK/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/KualiteeSDK/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -531,6 +709,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -540,14 +719,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDEA7FBF277E98524FA4DAA5 /* Pods-KualiteeSDK.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = KualiteeSDK/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/KualiteeSDK/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -568,6 +748,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C34351211930995B4D44CF54 /* Pods-KualiteeSDKTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CKB7CVX257;
 				INFOPLIST_FILE = KualiteeSDKTests/Info.plist;
@@ -587,6 +768,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE2BB0A60F73FA1B3D92D07D /* Pods-KualiteeSDKTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CKB7CVX257;
 				INFOPLIST_FILE = KualiteeSDKTests/Info.plist;

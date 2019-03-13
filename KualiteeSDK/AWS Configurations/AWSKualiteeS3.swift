@@ -43,6 +43,7 @@ class AWSKualiteeS3 {
     
     final internal class func uploadImageFileToBucket(image: UIImage, callBackHandler: @escaping callBackToSDKHandler) {
         guard let data: Data = image.pngData() else {return}
+        let key = ProcessInfo.processInfo.globallyUniqueString.appending(".png")
         
         let expression = AWSS3TransferUtilityUploadExpression()
         expression.progressBlock = {(task, progress) in
@@ -54,6 +55,7 @@ class AWSKualiteeS3 {
         
         var completionHandler: AWSS3TransferUtilityUploadCompletionHandlerBlock?
         completionHandler = { (task, error) -> Void in
+            KualiteeSDK.hideLoader()
             DispatchQueue.main.async(execute: {
                 if let err = error {
                     print(err.localizedDescription)
@@ -66,10 +68,12 @@ class AWSKualiteeS3 {
             })
         }
         
+        KualiteeSDK.showLoader(text: "Please Wait...")
+        
         let transferUtility = AWSS3TransferUtility.default()
         transferUtility.uploadData(data,
                                    bucket: Bucket_Name,
-                                   key: "ss.png",
+                                   key: key,
                                    contentType: "image/png",
                                    expression: expression,
                                    completionHandler: completionHandler).continueWith {

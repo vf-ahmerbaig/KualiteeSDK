@@ -26,6 +26,15 @@ public class KualiteeSDK {
         hasConfigured = false
     }
     
+    internal class func showLoader(text: String) {
+        self.activityIndicator = KualiteeIndicatorView(text: text)
+        UIApplication.shared.keyWindow?.addSubview(self.activityIndicator)
+    }
+    
+    internal class func hideLoader() {
+        self.activityIndicator.removeFromSuperview()
+    }
+    
     internal class func observe(motion: UIEvent.EventSubtype) {
         if motion == .motionShake {
             let aView = UIView(frame: UIScreen.main.bounds)
@@ -42,10 +51,6 @@ public class KualiteeSDK {
     }
     
     final private class func presentEditorView() {
-//        guard let bundle = KualiteeUtility.getSDKBundle() else {
-//            fatalError("can't open bundle")
-//        }
-        
         let bundle = Bundle(for: CanvasViewController.self)
         let editorVC = CanvasViewController.init(nibName: "CanvasViewController", bundle: bundle)
         guard let vc = UIApplication.shared.keyWindow?.rootViewController,
@@ -53,7 +58,7 @@ public class KualiteeSDK {
                 return
         }
         editorVC.image = image
-        editorVC.modalTransitionStyle = .crossDissolve
+        editorVC.modalTransitionStyle = .coverVertical
         vc.present(editorVC, animated: true, completion: nil)
     }
     
@@ -63,7 +68,7 @@ public class KualiteeSDK {
     }
     
     final internal class func showDeepLinkedApp(key: String, completionHandler: @escaping (Bool) -> ()) {
-        let appPath = "\(KualiteeSDKConstants.deepLinkId)://?\(KualiteeSDKConstants.KualiteeSharedImageURL)=\(KualiteeSDKConstants.KualiteeSharedImageID)&fileType=image/png&filename=imageFile&key=\(key)"
+        let appPath = "\(KualiteeSDKConstants.deepLinkId)://?\(KualiteeSDKConstants.KualiteeSharedImageURL)=\(KualiteeSDKConstants.KualiteeSharedImageID)&fileType=image/png&filename=\(key)&key=\(key)"
         let AppURL = URL(string: appPath)
         if let AppURL = AppURL, UIApplication.shared.canOpenURL(URL(string: "\(KualiteeSDKConstants.deepLinkId)://")!) {
             completionHandler(true)
