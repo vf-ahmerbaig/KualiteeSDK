@@ -42,9 +42,11 @@ public class KualiteeSDK {
     }
     
     final private class func presentEditorView() {
-        guard let bundle = KualiteeUtility.getSDKBundle() else {
-            fatalError("can't open bundle")
-        }
+//        guard let bundle = KualiteeUtility.getSDKBundle() else {
+//            fatalError("can't open bundle")
+//        }
+        
+        let bundle = Bundle(for: CanvasViewController.self)
         let editorVC = CanvasViewController.init(nibName: "CanvasViewController", bundle: bundle)
         guard let vc = UIApplication.shared.keyWindow?.rootViewController,
             let image = self.takeScreenshot() else {
