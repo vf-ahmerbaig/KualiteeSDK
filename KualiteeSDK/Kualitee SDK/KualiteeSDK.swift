@@ -33,7 +33,10 @@ public class KualiteeSDK {
     }
     
     internal class func hideLoader() {
-        self.activityIndicator.removeFromSuperview()
+        DispatchQueue.main.async {
+            self.activityIndicator.removeFromSuperview()
+        }
+        
     }
     
     internal class func observe(motion: UIEvent.EventSubtype) {
@@ -69,7 +72,7 @@ public class KualiteeSDK {
     }
     
     final internal class func showDeepLinkedApp(key: String, completionHandler: @escaping (Bool) -> ()) {
-        let appPath = "\(KualiteeSDKConstants.deepLinkId)://?\(KualiteeSDKConstants.KualiteeSharedImageURL)=\(KualiteeSDKConstants.KualiteeSharedImageID)&fileType=image/png&filename=\(key)&key=\(key)"
+        let appPath = "\(KualiteeSDKConstants.deepLinkId)://?fileType=image/png&filename=\(key)&key=\(key)"
         let AppURL = URL(string: appPath)
         if let AppURL = AppURL, UIApplication.shared.canOpenURL(URL(string: "\(KualiteeSDKConstants.deepLinkId)://")!) {
             completionHandler(true)

@@ -15,7 +15,7 @@ internal class KualiteeIndicatorView: UIVisualEffectView {
             label.text = text
         }
     }
-    let activityIndictor: UIActivityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
+    let activityIndictor: UIActivityIndicatorView = UIActivityIndicatorView(style: .white)
     let label: UILabel = UILabel()
     let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
     let vibrancyView: UIVisualEffectView
@@ -43,7 +43,7 @@ internal class KualiteeIndicatorView: UIVisualEffectView {
         
         activityIndictor.color = UIColor.white
         self.label.textColor = UIColor.white
-        self.label.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+        self.label.font = UIFont.systemFont(ofSize: 12, weight: .medium)
     }
     
     override func didMoveToSuperview() {

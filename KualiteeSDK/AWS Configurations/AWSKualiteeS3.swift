@@ -55,8 +55,8 @@ class AWSKualiteeS3 {
         
         var completionHandler: AWSS3TransferUtilityUploadCompletionHandlerBlock?
         completionHandler = { (task, error) -> Void in
-            KualiteeSDK.hideLoader()
             DispatchQueue.main.async(execute: {
+                KualiteeSDK.hideLoader()
                 if let err = error {
                     print(err.localizedDescription)
                     callBackHandler(false, nil, err)
