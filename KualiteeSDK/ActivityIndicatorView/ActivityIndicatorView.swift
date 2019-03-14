@@ -43,6 +43,7 @@ internal class KualiteeIndicatorView: UIVisualEffectView {
         
         activityIndictor.color = UIColor.white
         self.label.textColor = UIColor.white
+        self.label.font = UIFont.systemFont(ofSize: 14, weight: .medium)
     }
     
     override func didMoveToSuperview() {
