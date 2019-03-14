@@ -72,15 +72,32 @@ class CanvasViewController: UIViewController {
         self.colorCollectionView.register(CanvasColorCollectionCell.self, forCellWithReuseIdentifier: cellId)
     }
     
-    final internal func authForBugReport(key: String) {
+    final private func openAppStoreForKualiteeApplication() {
+        let application = UIApplication.shared
+        if let appURL = URL(string: "itms-apps://itunes.apple.com/app/\(KualiteeSDKConstants.KualiteeAppStoreID)"), application.canOpenURL(appURL) {
+            application.open(appURL, options: [:], completionHandler: nil)
+        } else {
+            KualiteeUtility.standardAlert(controller: self, title: "Error", message: "Unable to find Kualitee Application on AppStore.")
+        }
+        
+    }
+    
+    final internal func showOpenAppStoreAlert() {
+        let alert = UIAlertController(title: "Kualitee not installed", message: "Kualitee Application is not installed in your system. Would you like to download from AppStore?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { [weak self] (action) in
+            guard let self = self else {return}
+            self.openAppStoreForKualiteeApplication()
+        }))
+        
+        alert.addAction(UIAlertAction(title: "No", style: .destructive, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    final internal func authForBugReport(image: UIImage) {
         let alert = UIAlertController(title: "Kualitee", message: "Are you sure you want to report a bug? You will be redirected to Kualitee Application", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action) in
-            KualiteeSDK.showDeepLinkedApp(key: key) { [weak self] (success) in
-                guard let self = self else {return}
-                if success == false {
-                    KualiteeUtility.standardAlert(controller: self, title: "Error", message: "Kualitee Application is not installed in your system. Download it from AppStore.")
-                }
-            }
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { [weak self] (action) in
+            guard let self = self else {return}
+            self.uploadFileToBucket(image: image)
         }))
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
@@ -95,7 +112,11 @@ class CanvasViewController: UIViewController {
                 KualiteeUtility.standardAlert(controller: self, title: "Error", message: err.localizedDescription)
                 return
             }
-            self.authForBugReport(key: key!)
+            KualiteeSDK.showDeepLinkedApp(key: key!) { (success) in
+                if success == false {
+                    self.showOpenAppStoreAlert()
+                }
+            }
         }
     }
     
@@ -122,7 +143,13 @@ class CanvasViewController: UIViewController {
             print("ss not captured")
             return
         }
-        self.uploadFileToBucket(image: image)
+        let appPath = "\(KualiteeSDKConstants.deepLinkId)://"
+        let AppURL = URL(string: appPath)
+        if let AppURL = AppURL, UIApplication.shared.canOpenURL(AppURL) == false {
+            self.showOpenAppStoreAlert()
+            return
+        }
+        self.authForBugReport(image: image)
     }
     
     deinit {

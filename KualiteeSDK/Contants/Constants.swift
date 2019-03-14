@@ -15,6 +15,8 @@ public struct KualiteeSDKConstants {
     
     internal static let AppID: String = "com.kvf.KualiteeSDKSwift"
     
+    internal static let KualiteeAppStoreID: String = "id404166406"
+    
     internal static let KualiteeSharedImageID: String = "KImageId"
     internal static let KualiteeSharedImageURL: String = "SharedImageURL"
     

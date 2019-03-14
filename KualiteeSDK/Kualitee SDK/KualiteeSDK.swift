@@ -29,12 +29,14 @@ public class KualiteeSDK {
     
     internal class func showLoader(text: String) {
         self.activityIndicator.text = text
+        UIApplication.shared.beginIgnoringInteractionEvents()
         UIApplication.shared.keyWindow?.addSubview(self.activityIndicator)
     }
     
     internal class func hideLoader() {
         DispatchQueue.main.async {
             self.activityIndicator.removeFromSuperview()
+            UIApplication.shared.endIgnoringInteractionEvents()
         }
         
     }

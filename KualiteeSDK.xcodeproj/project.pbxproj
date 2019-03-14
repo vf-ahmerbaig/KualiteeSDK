@@ -65,7 +65,7 @@
 		87636E0622392B8600306502 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		87636E0822392B8600306502 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		87636E0A22392B8600306502 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		87B59D68223A13A600755B8E /* KualiteeSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KualiteeSDK.podspec; sourceTree = "<group>"; };
+		87B59D68223A13A600755B8E /* KualiteeSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KualiteeSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		87B8E94D22390A7200CE602B /* KualiteeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KualiteeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B8E95022390A7200CE602B /* KualiteeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KualiteeSDK.h; sourceTree = "<group>"; };
 		87B8E95122390A7200CE602B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,8 +167,8 @@
 		87636DEE22392B8500306502 /* CanvasViewController */ = {
 			isa = PBXGroup;
 			children = (
-				87636DEF22392B8500306502 /* CanvasViewController.xib */,
 				87636DF022392B8500306502 /* CanvasViewController.swift */,
+				87636DEF22392B8500306502 /* CanvasViewController.xib */,
 			);
 			path = CanvasViewController;
 			sourceTree = "<group>";

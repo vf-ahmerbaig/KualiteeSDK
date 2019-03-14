@@ -8,7 +8,7 @@ s.summary = "KualiteeSDK lets a user add QA ability to applications."
 s.requires_arc = true
 
 # 2
-s.version = "0.1.4"
+s.version = "0.1.6"
 
 # 3
 s.license = { :type => "MIT", :file => "MIT License" }
