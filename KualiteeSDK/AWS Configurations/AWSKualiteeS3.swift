@@ -10,7 +10,7 @@ import UIKit
 import AWSMobileClient
 import AWSS3
 
-typealias callBackToSDKHandler = (Bool, Error?) -> ()
+typealias callBackToSDKHandler = (Bool, String?, Error?) -> ()
 
 class AWSKualiteeS3 {
     
@@ -59,9 +59,9 @@ class AWSKualiteeS3 {
             DispatchQueue.main.async(execute: {
                 if let err = error {
                     print(err.localizedDescription)
-                    callBackHandler(false, err)
+                    callBackHandler(false, nil, err)
                 } else {
-                    callBackHandler(true, nil)
+                    callBackHandler(true, key, nil)
                 }
                 // Do something e.g. Alert a user for transfer completion.
                 // On failed uploads, `error` contains the error object.
@@ -80,7 +80,7 @@ class AWSKualiteeS3 {
                                     (task) -> Any? in
                                     if let err = task.error {
                                         print("Error: \(err.localizedDescription)")
-                                        callBackHandler(false, err)
+                                        callBackHandler(false, nil, err)
                                     }
                                     if let res = task.result {
                                         print(res)

@@ -28,6 +28,7 @@
 		87636E1C22392B8600306502 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636E0622392B8600306502 /* UIWindow+Extension.swift */; };
 		87636E1D22392B8600306502 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636E0822392B8600306502 /* URL+Extension.swift */; };
 		87636E1E22392B8600306502 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87636E0A22392B8600306502 /* NetworkManager.swift */; };
+		87B59D69223A13A700755B8E /* KualiteeSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 87B59D68223A13A600755B8E /* KualiteeSDK.podspec */; };
 		87B8E95722390A7200CE602B /* KualiteeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B8E94D22390A7200CE602B /* KualiteeSDK.framework */; };
 		87B8E95C22390A7200CE602B /* KualiteeSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B8E95B22390A7200CE602B /* KualiteeSDKTests.swift */; };
 		87B8E95E22390A7200CE602B /* KualiteeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 87B8E95022390A7200CE602B /* KualiteeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +65,7 @@
 		87636E0622392B8600306502 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		87636E0822392B8600306502 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		87636E0A22392B8600306502 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		87B59D68223A13A600755B8E /* KualiteeSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KualiteeSDK.podspec; sourceTree = "<group>"; };
 		87B8E94D22390A7200CE602B /* KualiteeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KualiteeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B8E95022390A7200CE602B /* KualiteeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KualiteeSDK.h; sourceTree = "<group>"; };
 		87B8E95122390A7200CE602B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 		87B8E94322390A7200CE602B = {
 			isa = PBXGroup;
 			children = (
+				87B59D68223A13A600755B8E /* KualiteeSDK.podspec */,
 				87B8E94F22390A7200CE602B /* KualiteeSDK */,
 				87B8E95A22390A7200CE602B /* KualiteeSDKTests */,
 				87B8E94E22390A7200CE602B /* Products */,
@@ -431,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B59D69223A13A700755B8E /* KualiteeSDK.podspec in Resources */,
 				87636E1022392B8600306502 /* CanvasViewController.xib in Resources */,
 				87636E1A22392B8600306502 /* Assets.xcassets in Resources */,
 			);

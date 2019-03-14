@@ -72,10 +72,10 @@ class CanvasViewController: UIViewController {
         self.colorCollectionView.register(CanvasColorCollectionCell.self, forCellWithReuseIdentifier: cellId)
     }
     
-    final internal func authForBugReport() {
+    final internal func authForBugReport(key: String) {
         let alert = UIAlertController(title: "Kualitee", message: "Are you sure you want to report a bug? You will be redirected to Kualitee Application", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action) in
-            KualiteeSDK.showDeepLinkedApp(key: "ss.png") { [weak self] (success) in
+            KualiteeSDK.showDeepLinkedApp(key: key) { [weak self] (success) in
                 guard let self = self else {return}
                 if success == false {
                     KualiteeUtility.standardAlert(controller: self, title: "Error", message: "Kualitee Application is not installed in your system. Download it from AppStore.")
@@ -89,13 +89,13 @@ class CanvasViewController: UIViewController {
     
     fileprivate func uploadFileToBucket(image: UIImage) {
         
-        AWSKualiteeS3.uploadImageFileToBucket (image: image) { [weak self] (success, error) in
+        AWSKualiteeS3.uploadImageFileToBucket (image: image) { [weak self] (success, key, error) in
             guard let self = self else {return}
             if let err = error {
                 KualiteeUtility.standardAlert(controller: self, title: "Error", message: err.localizedDescription)
                 return
             }
-            self.authForBugReport()
+            self.authForBugReport(key: key!)
         }
     }
     
