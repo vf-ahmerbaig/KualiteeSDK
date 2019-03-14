@@ -15,9 +15,9 @@ internal class KualiteeIndicatorView: UIVisualEffectView {
             label.text = text
         }
     }
-    let activityIndictor: UIActivityIndicatorView = UIActivityIndicatorView(style: .white)
+    let activityIndictor: UIActivityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
     let label: UILabel = UILabel()
-    let blurEffect = UIBlurEffect(style: .light)
+    let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
     let vibrancyView: UIVisualEffectView
     
     init(text: String) {
@@ -40,6 +40,9 @@ internal class KualiteeIndicatorView: UIVisualEffectView {
         vibrancyView.contentView.addSubview(activityIndictor)
         vibrancyView.contentView.addSubview(label)
         activityIndictor.startAnimating()
+        
+        activityIndictor.color = UIColor.white
+        self.label.textColor = UIColor.white
     }
     
     override func didMoveToSuperview() {

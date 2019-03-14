@@ -19,6 +19,7 @@ public class KualiteeSDK {
     
     public class func configure() {
         hasConfigured = true
+        self.activityIndicator = KualiteeIndicatorView(text: "")
         AWSKualiteeS3.configure()
     }
     
@@ -27,7 +28,7 @@ public class KualiteeSDK {
     }
     
     internal class func showLoader(text: String) {
-        self.activityIndicator = KualiteeIndicatorView(text: text)
+        self.activityIndicator.text = text
         UIApplication.shared.keyWindow?.addSubview(self.activityIndicator)
     }
     
