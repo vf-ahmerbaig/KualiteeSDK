@@ -10,19 +10,21 @@ import UIKit
 import AWSMobileClient
 import AWSS3
 
-public class KualiteeSDK {
-    private init() {}
-    
+@objc
+public class KualiteeSDK: NSObject {
+
     internal static var activityIndicator: KualiteeIndicatorView!
     
     internal static var hasConfigured: Bool = false
     
+    @objc
     public class func configure() {
         hasConfigured = true
         self.activityIndicator = KualiteeIndicatorView(text: "")
         AWSKualiteeS3.configure()
     }
     
+    @objc
     public class func resign() {
         hasConfigured = false
     }

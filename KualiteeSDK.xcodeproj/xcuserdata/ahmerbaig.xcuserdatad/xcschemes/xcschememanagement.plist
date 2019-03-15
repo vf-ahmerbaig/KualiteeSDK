@@ -4,10 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>KualiteeSDK.xcscheme_^#shared#^_</key>
+		<key>KualiteeSDK.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>87B8E94C22390A7200CE602B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>87B8E95522390A7200CE602B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
